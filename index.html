@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vacantes disponibles | AMAC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Work+Sans:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
+  <a class="saltar-contenido" href="#principal">Saltar al contenido</a>
+
+  <header class="encabezado">
+    <div class="encabezado__interior">
+      <a class="logo" href="index.html"><svg width="44" height="22" viewBox="0 0 44 22" fill="none" aria-hidden="true"><path d="M3 17 L11 6 L18 15 L26 3 L33 15 L41 8" stroke="#FF815C" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>AMAC</span></a>
+      <nav aria-label="Navegación principal">
+        <ul class="nav__lista">
+        <li><a class="nav__enlace" href="index.html" aria-current="page">Vacantes</a></li>
+        <li><a class="nav__enlace" href="mis-solicitudes.html">Mis solicitudes</a></li>
+        <li><a class="nav__enlace" href="login.html">Iniciar sesión</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <aside class="franja-ayuda" aria-label="Ayuda">
+    <div class="franja-ayuda__interior">
+      <p class="franja-ayuda__texto">¿Necesita ayuda? Llámenos: 81 0000 0000</p>
+      <a class="boton boton--acento" href="tel:+528100000000">Llamar ahora</a>
+    </div>
+  </aside>
+
+  <main id="principal">
+    <div class="contenedor">
+      <div class="pila">
+        <h1>Vacantes disponibles</h1>
+
+        <section class="panel" aria-labelledby="buscar-titulo">
+          <h2 class="solo-lectores" id="buscar-titulo">Buscar y filtrar vacantes</h2>
+          <div class="campo-formulario">
+            <label for="buscar">¿Qué trabajo busca?</label>
+            <input type="search" id="buscar" name="buscar" placeholder="Escriba el puesto o la empresa">
+          </div>
+          <div class="filtros">
+        <div class="campo-formulario">
+          <label for="ciudad">Ciudad</label>
+          <select id="ciudad" name="ciudad"><option>Todas</option><option>Monterrey</option><option>Guadalupe</option><option>San Pedro</option><option>San Nicolás</option></select>
+        </div>
+        <div class="campo-formulario">
+          <label for="horario">Horario</label>
+          <select id="horario" name="horario"><option>Cualquiera</option><option>Matutino</option><option>Vespertino</option><option>Flexible</option><option>Fines de semana</option></select>
+        </div>
+        <div class="campo-formulario">
+          <label for="tipo">Tipo de empleo</label>
+          <select id="tipo" name="tipo"><option>Todos</option><option>Medio tiempo</option><option>Tiempo completo</option></select>
+        </div>
+          </div>
+          <div class="acciones">
+            <button type="button" class="boton boton--primario">Buscar vacantes</button>
+          </div>
+        </section>
+
+        <p class="texto-grande"><strong>Mostrando 6 vacantes</strong></p>
+
+        <section aria-labelledby="lista-titulo">
+          <h2 class="solo-lectores" id="lista-titulo">Lista de vacantes</h2>
+          <div class="lista-vacantes">
+        <article class="tarjeta-vacante">
+          <h3 class="tarjeta-vacante__titulo">Auxiliar de recepción</h3>
+          <p class="tarjeta-vacante__empresa">Clínica San José</p>
+          <p class="tarjeta-vacante__datos">Monterrey · Medio tiempo</p>
+          <a class="boton boton--primario" href="vacante.html">Ver vacante</a>
+        </article>
+        <article class="tarjeta-vacante">
+          <h3 class="tarjeta-vacante__titulo">Atención en tienda</h3>
+          <p class="tarjeta-vacante__empresa">Papelería El Lápiz</p>
+          <p class="tarjeta-vacante__datos">Guadalupe · Medio tiempo</p>
+          <a class="boton boton--primario" href="vacante.html">Ver vacante</a>
+        </article>
+        <article class="tarjeta-vacante">
+          <h3 class="tarjeta-vacante__titulo">Apoyo administrativo</h3>
+          <p class="tarjeta-vacante__empresa">Despacho Ríos</p>
+          <p class="tarjeta-vacante__datos">San Pedro · Horario flexible</p>
+          <a class="boton boton--primario" href="vacante.html">Ver vacante</a>
+        </article>
+        <article class="tarjeta-vacante">
+          <h3 class="tarjeta-vacante__titulo">Recepcionista</h3>
+          <p class="tarjeta-vacante__empresa">Hotel Plaza Monterrey</p>
+          <p class="tarjeta-vacante__datos">Monterrey · Matutino</p>
+          <a class="boton boton--primario" href="vacante.html">Ver vacante</a>
+        </article>
+        <article class="tarjeta-vacante">
+          <h3 class="tarjeta-vacante__titulo">Guía de museo</h3>
+          <p class="tarjeta-vacante__empresa">Museo del Noreste</p>
+          <p class="tarjeta-vacante__datos">Monterrey · Fines de semana</p>
+          <a class="boton boton--primario" href="vacante.html">Ver vacante</a>
+        </article>
+        <article class="tarjeta-vacante">
+          <h3 class="tarjeta-vacante__titulo">Auxiliar de biblioteca</h3>
+          <p class="tarjeta-vacante__empresa">Biblioteca Municipal</p>
+          <p class="tarjeta-vacante__datos">San Nicolás · Matutino</p>
+          <a class="boton boton--primario" href="vacante.html">Ver vacante</a>
+        </article>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__interior">
+      <p><strong>AMAC · asociAMayores A.C.</strong></p>
+      <p>Teléfono de ayuda: <a href="tel:+528100000000">81 0000 0000</a></p>
+    </div>
+  </footer>
+</body>
+</html>

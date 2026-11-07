@@ -1,0 +1,64 @@
+/* Encabezado */
+.encabezado { background: var(--color-superficie); }
+.encabezado__interior {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+  gap: var(--espacio-s) var(--espacio-l);
+  padding: var(--espacio-m);
+}
+.logo {
+  display: inline-flex; align-items: center; gap: 0.625rem;
+  min-height: 2.75rem;
+  color: var(--color-primario); text-decoration: none;
+  font-size: 1.625rem; font-weight: 700; letter-spacing: 0.2em;
+}
+.nav__lista { display: flex; flex-wrap: wrap; gap: 0 1.5rem; }
+.nav__enlace {
+  display: inline-flex; align-items: center;
+  min-height: 2.75rem; padding-inline: 0.25rem;
+  font-size: var(--texto-boton); font-weight: 500;
+  color: var(--color-primario); text-decoration: none;
+}
+.nav__enlace:hover,
+.nav__enlace[aria-current="page"] {
+  text-decoration: underline;
+  text-decoration-color: var(--color-acento);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 0.35em;
+}
+
+/* Franja de ayuda (RF-052) */
+.franja-ayuda { background: var(--color-durazno); }
+.franja-ayuda__interior {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+  gap: var(--espacio-s) var(--espacio-m);
+  padding: 0.75rem var(--espacio-m);
+}
+.franja-ayuda__texto { font-weight: 700; }
+
+/* Contenedores */
+.contenedor { width: min(100% - 2rem, var(--ancho, 1100px)); margin-inline: auto; }
+.contenedor--estrecho { --ancho: 760px; }
+.contenedor--formulario { --ancho: 720px; }
+.contenedor--acceso { --ancho: 560px; }
+.contenedor--medio { --ancho: 860px; }
+.contenedor--ancho { --ancho: 960px; }
+main { padding-block: var(--espacio-l) var(--espacio-xl); }
+.pila { display: flex; flex-direction: column; gap: var(--espacio-l); }
+
+/* Grid de vacantes: mobile-first */
+.lista-vacantes { display: grid; grid-template-columns: 1fr; gap: var(--espacio-m); }
+
+/* Pie de página */
+.pie { padding-block: 1.5rem; color: #fff; background: var(--color-primario); }
+.pie__interior { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--espacio-s) var(--espacio-l); }
+.pie a { color: #fff; }
+
+@media (min-width: 768px) {
+  .encabezado__interior, .franja-ayuda__interior { padding-inline: 3rem; }
+  .franja-ayuda__interior { padding-block: 0.75rem; }
+  main { padding-block: var(--espacio-xl) 3.5rem; }
+  .lista-vacantes { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1024px) {
+  .lista-vacantes { grid-template-columns: repeat(3, 1fr); }
+}

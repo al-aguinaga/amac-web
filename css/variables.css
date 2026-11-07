@@ -1,0 +1,34 @@
+/* Design tokens tomados del prototipo de Figma y del manual de marca AMAC */
+:root {
+  /* Colores */
+  --color-primario: #202945;      /* azul marino (Pantone 533 C) */
+  --color-acento: #FF815C;        /* naranja de la marca */
+  --color-cielo: #CAE4EF;         /* azul claro */
+  --color-durazno: #FDDAAD;       /* durazno */
+  --color-texto: #202945;
+  --color-texto-suave: #4A5060;   /* gris oscuro (contraste alto sobre blanco) */
+  --color-fondo: #F5F6F8;
+  --color-superficie: #FFFFFF;
+  --color-borde: #B8BFCC;
+  --color-gris-claro: #E3E6EB;
+
+  /* Tipografía */
+  --fuente-titulos: "Libre Baskerville", Georgia, serif;
+  --fuente-base: "Work Sans", system-ui, sans-serif;
+  --texto-base: 1.125rem;   /* 18 px */
+  --texto-h1: 1.75rem;      /* 28 px móvil */
+  --texto-h2: 1.375rem;     /* 22 px */
+  --texto-boton: 1.25rem;   /* 20 px */
+
+  /* Espaciados y bordes */
+  --espacio-s: 0.5rem;
+  --espacio-m: 1rem;
+  --espacio-l: 1.25rem;
+  --espacio-xl: 2.5rem;
+  --radio: 0.75rem;
+  --radio-s: 0.625rem;
+}
+
+@media (min-width: 768px) {
+  :root { --texto-h1: 2.25rem; } /* 36 px escritorio */
+}
