@@ -73,5 +73,8 @@ Clase | Componente de React
 Texto base en `rem`, texto azul marino sobre el naranja por contraste, botones y enlaces de al menos 44 px, `label` visible en cada campo, `:focus-visible` con contorno de 3 px, `lang="es"`, un solo `h1` por página, enlace "Saltar al contenido" y estatus escritos con texto.
 
 # Verificación
-Capturas de las verificaciones adjuntadas al GitHub.
+Capturas de pantalla de index.html en celular (320px) y en computadora (1440px). Y Captura del puntaje de Lighthouse
+![index en celular](Tamanos_pantalla/320px.png)
+![index en compu](Tamanos_pantalla/1440px.png)
+![lighthouse](Lighthouse_puntuacion-mayor-90.png)
 
