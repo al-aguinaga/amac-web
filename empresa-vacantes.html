@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis vacantes | AMAC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Work+Sans:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/componentes.css">
+</head>
+<body>
+  <a class="saltar-contenido" href="#principal">Saltar al contenido</a>
+
+  <header class="encabezado">
+    <div class="encabezado__interior">
+      <a class="logo" href="index.html"><svg width="44" height="22" viewBox="0 0 44 22" fill="none" aria-hidden="true"><path d="M3 17 L11 6 L18 15 L26 3 L33 15 L41 8" stroke="#FF815C" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>AMAC</span></a>
+      <nav aria-label="Navegación principal">
+        <ul class="nav__lista">
+        <li><a class="nav__enlace" href="empresa-vacantes.html" aria-current="page">Mis vacantes</a></li>
+        <li><a class="nav__enlace" href="solicitudes-recibidas.html">Solicitudes recibidas</a></li>
+        <li><a class="nav__enlace" href="login.html">Salir</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <aside class="franja-ayuda" aria-label="Ayuda">
+    <div class="franja-ayuda__interior">
+      <p class="franja-ayuda__texto">¿Necesita ayuda? Llámenos: 81 0000 0000</p>
+      <a class="boton boton--acento" href="tel:+528100000000">Llamar ahora</a>
+    </div>
+  </aside>
+
+  <main id="principal">
+    <div class="contenedor contenedor--medio">
+      <div class="pila">
+        <h1>Mis vacantes</h1>
+        <div class="acciones">
+          <button type="button" class="boton boton--acento">Publicar nueva vacante</button>
+        </div>
+      <article class="fila">
+        <div class="fila__texto">
+          <h2 class="fila__titulo">Auxiliar de recepción</h2>
+          <p class="fila__detalle">2 solicitudes nuevas</p>
+          <p><span class="etiqueta-estatus etiqueta-estatus--activa">Estado: Activa</span></p>
+        </div>
+        <div class="acciones">
+          <button type="button" class="boton boton--secundario">Editar</button><a class="boton boton--primario" href="solicitudes-recibidas.html">Ver solicitudes</a>
+        </div>
+      </article>
+      <article class="fila">
+        <div class="fila__texto">
+          <h2 class="fila__titulo">Atención en tienda</h2>
+          <p class="fila__detalle">Sin solicitudes nuevas</p>
+          <p><span class="etiqueta-estatus etiqueta-estatus--activa">Estado: Activa</span></p>
+        </div>
+        <div class="acciones">
+          <button type="button" class="boton boton--secundario">Editar</button><a class="boton boton--primario" href="solicitudes-recibidas.html">Ver solicitudes</a>
+        </div>
+      </article>
+      <article class="fila">
+        <div class="fila__texto">
+          <h2 class="fila__titulo">Apoyo administrativo</h2>
+          <p class="fila__detalle">5 solicitudes recibidas</p>
+          <p><span class="etiqueta-estatus etiqueta-estatus--cerrada">Estado: Cerrada</span></p>
+        </div>
+        <div class="acciones">
+          <button type="button" class="boton boton--secundario">Editar</button>
+        </div>
+      </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__interior">
+      <p><strong>AMAC · asociAMayores A.C.</strong></p>
+      <p>Teléfono de ayuda: <a href="tel:+528100000000">81 0000 0000</a></p>
+    </div>
+  </footer>
+</body>
+</html>
