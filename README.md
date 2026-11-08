@@ -1,6 +1,6 @@
 # AMAC
 
-**Sitio publicado en Vercel:** 
+**Sitio publicado en Vercel:** amac-web-eosin.vercel.app 
 **Prototipo de Figma (Entrega 1):** https://www.figma.com/design/qoXt2EuZUhMGNxdyHFwg1U
 
 # Integrantes y qué hizo cada uno
@@ -13,18 +13,18 @@ Sofia De los Santos | `css/componentes.css`, `vacante.html`, `confirmacion.html`
 
 David Jiménez | `login.html`, `registro-candidato.html`, `mis-solicitudes.html` | Creó el inicio de sesión, el registro de candidato (con `fieldset`, `legend`, radios y casilla de términos) y Mis solicitudes con 3 estatus y el botón "Cancelar". 
 
-Alejandro Aguiñaga | `empresa-vacantes.html`, `registro-empresa.html`, `solicitudes-recibidas.html`, `README.md` | Hizo el panel de vacantes de la empresa, el registro de empresa y las solicitudes recibidas; redactó este README y reunió las capturas de las pruebas. |
+Alejandro Aguiñaga | `empresa-vacantes.html`, `registro-empresa.html`, `solicitudes-recibidas.html`, `README.md`, `vercel.json` | Hizo el panel de vacantes de la empresa, el registro de empresa y las solicitudes recibidas; redactó este README y reunió las capturas de las pruebas. Por ultimo, agregó un .json para que la pagina de vercel tenga inicio en el inicio de sesión y no en la lista de vacantes.
 
 # Estructura
 
 ```
 amac-web/
-|-- index.html · vacante.html · confirmacion.html · login.html
-|-- registro-candidato.html · mis-solicitudes.html
-|-- empresa-vacantes.html · registro-empresa.html · solicitudes-recibidas.html
-|-- css/  variables.css · base.css · layout.css · componentes.css
-|-- img/
-|__ README.md
+|-- index.html _ vacante.html _ confirmacion.html _ login.html
+|-- registro-candidato.html _ mis-solicitudes.html
+|-- empresa-vacantes.html _ registro-empresa.html _ solicitudes-recibidas.html
+|-- css/  variables.css _ base.css _ layout.css _ componentes.css
+|-- README.md
+|__ vercel.json
 
 ```
 
