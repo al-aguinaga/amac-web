@@ -1,6 +1,6 @@
 # AMAC
 
-**Sitio publicado en Vercel:** https://amac-8cx5x0nrs-acme-1b37.vercel.app/login.html 
+**Sitio publicado en Vercel:** https://amac-web-eosin.vercel.app
 **Prototipo de Figma (Entrega 1):** https://www.figma.com/design/qoXt2EuZUhMGNxdyHFwg1U
 
 # Integrantes y qué hizo cada uno
