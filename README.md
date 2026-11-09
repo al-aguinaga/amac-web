@@ -63,9 +63,7 @@ Clase | Componente de React
 # Cambios respecto al Figma
 
 - En celular, el menú de navegación se muestra como enlaces visibles abajo del logo en lugar del botón "Menú", porque esta entrega no usa JavaScript.
-- El listado tiene 6 tarjetas (en Figma habían 3) por lo que pedia la entrega.
-- "Llamar a la empresa" aparece solo en el detalle de la vacante (RF-051).
-- Ni el logo ni el el teléfono son reales, por lo que es se ponen el logo oficial y el número real.
+- El listado de vacantes tiene 6 tarjetas (en Figma habían 3) por lo que pedia la entrega.
 - Los botones de formularios y filtros son solo visuales. Los enlaces entre páginas sí funcionan.
 
 # Accesibilidad
