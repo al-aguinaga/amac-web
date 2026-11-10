@@ -27,6 +27,8 @@ El archivo `vercel.json` está en la raíz del repositorio y Vercel lo lee cada 
 
 **Por qué la usamos:** como se explicó, queríamos que el flujo empezara en el inicio de sesión, pero la entrega exige que `index.html` sea el listado de vacantes, así que no cambiamos a que el inicio de sesión sea index. Sin este archivo .json, el Vercel mostraría el `index.html` al abrir la dirección principal. Si se borra este `vercel.json`, el sitio vuelve a abrir en el listado de las vacantes.
 
+Aclaración: Para este archivo se utilizó inteligencia artificial debido a que los miembros de este equipo no contamos con el conocimiento suficiente para crear archivos .json
+
 # Estructura
 
 ```
