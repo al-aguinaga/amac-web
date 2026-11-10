@@ -15,6 +15,18 @@ David Jiménez | `login.html`, `registro-candidato.html`, `mis-solicitudes.html`
 
 Alejandro Aguiñaga | `empresa-vacantes.html`, `registro-empresa.html`, `solicitudes-recibidas.html`, `README.md`, `vercel.json` | Hizo el panel de vacantes de la empresa, el registro de empresa y las solicitudes recibidas; redactó este README y reunió las capturas de las pruebas. Por ultimo, agregó un .json para que la pagina de vercel tenga inicio en el inicio de sesión y no en la lista de vacantes.
 
+# Notas sobre el .json:
+
+El archivo `vercel.json` está en la raíz del repositorio y Vercel lo lee cada vez que publica el sitio y este archivo json tiene una redirección temporal que afecta a vercel.
+
+    { "redirects": [ { "source": "/", "destination": "/login.html", "permanent": false } ] }
+
+- `source: "/"` es la página principal del sitio.
+- `destination: "/login.html"` es la página a la que se va a mandar a la persona que ve el sitio y en lugar de mandarlo al index, lo va a mandar al inicio de sesión porque así lo requerimos para cumplir el flujo del usuario.
+- `permanent: false` esto indica que la redirección es temporal, como se mencionó, así que el navegador no la guarda para siempre.
+
+**Por qué la usamos:** como se explicó, queríamos que el flujo empezara en el inicio de sesión, pero la entrega exige que `index.html` sea el listado de vacantes, así que no cambiamos a que el inicio de sesión sea index. Sin este archivo .json, el Vercel mostraría el `index.html` al abrir la dirección principal. Si se borra este `vercel.json`, el sitio vuelve a abrir en el listado de las vacantes.
+
 # Estructura
 
 ```
